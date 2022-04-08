@@ -1,25 +1,27 @@
-# CG Tutorial files 
+# CG Tutorial files
 
 ### DISCLAIMER
 
-THIS REPOSITORY WAS CREATED IN ORDER TO PROVIDE STUDENTS OF THE CG LECTURE A STARTING POINT FOR CONDUCTING THE EXCERCISES. IT CONTAINS 
+THIS REPOSITORY WAS CREATED IN ORDER TO PROVIDE STUDENTS OF THE CG LECTURE A STARTING POINT FOR CONDUCTING THE EXCERCISES. IT CONTAINS
 BINARY VERSIONS OF GLEW, GLUT, SFML AND OTHER LIBRARIES. NOT FOR REUSE AND DISTRIBUTION.
 
 ## Setting up the tutorials
 
 - clone the repository or download snapshot
-- Extract ```contrib.zip```  The folder should now contain two subfolders cmake and contrib, in addition to the tutorial files (```uXX```)
+- Extract ```contrib.zip```  The folder should now contain two subfolders cmake and contrib, in addition to the tutorial files (```uXX```); it should somewhat look like this:
+
+!["Folder"](./img/folder.png)
 
 ## Building the tutorials
 The tutorials use the cmake build system. By using cmake you are able to create make and project files for various IDEs and platforms.
-Please keep in mind that you'll need to have SFML (http://www.sfml-dev.org/) and GLEW (http://glew.sourceforge.net/) installed. 
+Please keep in mind that you'll need to have SFML (http://www.sfml-dev.org/) and GLEW (http://glew.sourceforge.net/) installed.
 To get you started here is a short tutorial  for Linux and Windows:
 
 
 ### Linux
 - Install SFML (minimum 2.0) and GLEW
-- cd to the tutorial's directory
-- create a build folder
+- cd to the tutorial's directory (e.g. ```u03``` )
+- create a ```build``` folder
 - cd to that folder
 - execute ```cmake ..```
   it will generate a makefile. In case it gives you errors try to fix missing dependecies
@@ -30,18 +32,17 @@ To get you started here is a short tutorial  for Linux and Windows:
 
 ### Windows
 
-- extract ```contrib.zip``` to the 
 - install cmake https://cmake.org/ (3.23.3 at the time of writing)
 - install Visual Studio 2017, 2019 or 2022
 - 2 options
   - 1) manual
     - open a command line
-    - cd to the directory of the tutorial
-    - create a new folder called build
-    - cd to that build folder
-    - execute cmake with -G to show a list of generators
+    - cd to the directory of the tutorial (e.g. ```u03``` )
+    - create a new folder called ```build```
+    - cd to that ```build``` folder
+    - execute ```cmake``` with ```-G``` to show a list of generators
     - select the generator of the IDE of you choice and use the path to the upper directory as second parameter
-	     e.g. ```cmake -G "Visual Studio 15 2017 Win64"``` 
+	     e.g. ```cmake -G "Visual Studio 15 2017 Win64" ..```
 	      creates a Project file for "Visual Studio 2017" and sets the architecture to 64 bit
   - 2) gui
     - open the cmake GUI
@@ -49,7 +50,7 @@ To get you started here is a short tutorial  for Linux and Windows:
     - set binary folder to a new folder (e.g. (e.g. ```c:/tutorials/u03/build```)
     - click "Configure" and choose Generator of installed Visual Studio
     - once done, click "Generate"
-	
+
 - Open the newly generated projecte file (e.g. .sln for Visual Studio in you IDE)
 - Try to compile it
 - In order to launch the application from within Visual Studio you need to set the Startup-Project:
@@ -58,7 +59,7 @@ To get you started here is a short tutorial  for Linux and Windows:
   Copy the DLLs of the architecture of your choice to compilers output directory (where the exe lives)
   e.g. ```../build/Debug```
 - Try launching the programm again
-- If this should fail. Copy the dlls to your c:\windows\system32 folder
+- If this should fail. Copy the dlls to your ```c:\windows\system32``` folder
 
 ### OSX (experimental)
 
