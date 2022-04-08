@@ -35,79 +35,8 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // draw...
-    		GLfloat color_array[] = { 0.0,0.0,1.0 };
-    		glColor3fv(color_array);
-
-    		glMatrixMode(GL_MODELVIEW);
-    		glLoadIdentity();
-
-        glBegin(GL_TRIANGLES);
-        glVertex3f(-0.5, -0.5, 0.0);
-    		glVertex3f(-0.75, -0.5, 0.0);
-    		glVertex3f(-0.75, -0.75, 0.0);
-        glEnd();
-
-        glColor3f(1.0,0.0,0.0);
-        glBegin(GL_POLYGON);
-        glVertex3f(0.5,  0.5, 0.0);
-        glVertex3f(0.75, 0.5, 0.0);
-        glVertex3f(0.75, 0.75, 0.0);
-        glVertex3f(0.5,  0.75, 0.0);
-        glEnd();
-
-        angle = i++ % 360;
-
-        glColor3f(1.0,1.0,0.0);
-        glRotatef(angle, 0.0, 0.0, 1.0);
-        glTranslatef(-0.3, 0.3, 0.0);
-        glBegin(GL_POLYGON);
-        glVertex3f(-0.1,  0.1, 0.0);
-        glVertex3f(-0.1, -0.1, 0.0);
-        glVertex3f(0.1, -0.1, 0.0);
-        glVertex3f(0.1,  0.1, 0.0);
-        glEnd();
-
-        glColor3f(0.0,1.0,1.0);
-        glLoadIdentity();
-        glTranslatef(-0.3, 0.3, 0.0);
-        glRotatef(angle, 0.0, 0.0, 1.0);
-
-        glBegin(GL_POLYGON);
-        glVertex3f(-0.1,  0.1, 0.0);
-        glVertex3f(-0.1, -0.1, 0.0);
-        glVertex3f(0.1, -0.1, 0.0);
-        glVertex3f(0.1,  0.1, 0.0);
-        glEnd();
-
-        //glTranslatef(-0.625, 0.625, 0.0);
-        //glRotatef(angle, 0.0, 0.0, 1.0);
-
-
-//         //glTranslatef(-0.5, 0.0, 0.0);
-//     		//glRotatef(45.0, 0.0, 0.0, 1.0);
-//     		//glRotatef(45.0, 0.0, 0.0, 1.0);
-//     		//glTranslatef(-0.5, 0.0, 0.0);
-//     		glBegin(GL_POLYGON);
-//     		glVertex3f(0.25, 0.25, 0.0);
-//     		glVertex3f(0.75, 0.25, 0.0);
-//     		glVertex3f(0.75, 0.75, 0.0);
-//     		glVertex3f(0.25, 0.75, 0.0);
-//     		glVertex3f(0.1, 0.5, 0.0);
-//         glEnd();
-//
-//         angle = i++ % 360;
-//         // glTranslatef(0.0, 0.4, 0.0);
-//         // glRotatef(angle, 0.0, 0.0, 1.0);
-//         glBegin(GL_POLYGON);
-//         glColor3f(1.0,0.0,0.0);
-//         glVertex3f(-0.25, -0.25, 0.0);
-//     		glVertex3f(-0.75, -0.25, 0.0);
-//     		glVertex3f(-0.75, -0.75, 0.0);
-//     		glEnd();
-
-
-
-    		glFlush();
+    		
+	glFlush();
 
         // end the current frame (internally swaps the front and back buffers)
         window.display();
