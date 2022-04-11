@@ -72,7 +72,7 @@ endif()
 
 
 ADD_EXECUTABLE(${PROJECT_NAME}
-    src/main.cpp
+    src/mainsol.cpp
 )
 
 # Set compiler options
