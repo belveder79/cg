@@ -1,4 +1,4 @@
-project(U05)
+project(U07)
 set(CGTUTORIAL_PROJ ${CMAKE_CURRENT_SOURCE_DIR})
 cmake_minimum_required(VERSION 2.8)
 
