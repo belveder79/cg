@@ -72,7 +72,7 @@ void bresenham(int startx, int starty, int endx, int endy) {
 int main()
 {
 	// create the window
-	window.create(sf::VideoMode(WINDOW_RES_X, WINDOW_RES_Y), "Bezier Tutorial 04", sf::Style::Default, sf::ContextSettings(32));
+	window.create(sf::VideoMode(WINDOW_RES_X, WINDOW_RES_Y), "Bresenham u07", sf::Style::Default, sf::ContextSettings(32));
 	window.setVerticalSyncEnabled(true);
 
 	// load resources, initialize the OpenGL states, ...
